@@ -84,11 +84,9 @@ void insertAfterNode(struct Node* prevNode, int data) {
 }
 
 int main(){
-    //create the nodes
     struct Node* head = createNode(1);
     struct Node* second = createNode(2);
     struct Node* third = createNode(3);
-    //link the nodes together
     head->next = second;
     second->next=third;
     third->next=NULL;
